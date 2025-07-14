@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="calculator">
+        <div class="container">
+        <input type="text" id="result" > 
+        </div>
+
+        <div class="container">
+            <button type="button" onclick="addvalue('%')"> % </button>
+             <button type="button" onclick="canclevalue()"> C </button>
+             <button type="button" onclick="deletevalue()"> DLE </button> 
+             <button type="button" onclick="addvalue('/')"> / </button>
+        </div>
+
+        <div class="container">
+            <button type="button" onclick="addvalue('1')"> 1</button>
+             <button type="button" onclick="addvalue('2')">2 </button> 
+             <button type="button" onclick="addvalue('3')"> 3</button>
+              <button type="button" onclick="addvalue('+')"> +</button>
+        </div>
+
+        <div class="container">
+            <button type="button" onclick="addvalue('4')">4 </button> 
+            <button type="button" onclick="addvalue('5')"> 5</button> 
+            <button type="button" onclick="addvalue('6')"> 6</button>
+             <button type="button" onclick="addvalue('-')"> - </button>
+        </div>
+
+        <div class="container">
+            <button type="button" onclick="addvalue('7')"> 7</button> 
+            <button type="button" onclick="addvalue('8')"> 8</button> 
+            <button type="button" onclick="addvalue('9')">9 </button> 
+            <button type="button" onclick="addvalue('*')"> *</button>
+        </div>
+
+        <div class="container">
+            <button type="button" onclick="addvalue('00')"> 00</button> 
+            <button type="button" onclick="addvalue('0')">0 </button>
+            <button type="button" onclick="addvalue('.')"> .</button> 
+            <button type="button" class="evaluate" onclick="equalvalue()">= </button>
+       
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
