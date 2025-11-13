@@ -1,53 +1,68 @@
-.calculator{
-    background-color:  rgb(70, 214, 237);
-    width: 50vh;
-    height: 50vh;
-    border: 3px solid  rgb(59, 212, 236);
-    
-    border-radius: 5px;
-    margin: auto;
-   margin-top: 200px;
-   display: grid;
-   position: relative;
-    gap: 5px;
-    padding: 5px;
-}   
-.container{
-    display: flex;
-    justify-content: space-between;
-    gap: 5px;
-   
+body{
+  background-color: black;
 }
 
-.container button{
-     width: 25%;
-     font-size: 15px;
-     border: none;
-     border-radius: 5px;
-    
+.calculator {
+  background-color: white;
+  width: 50vh;
+  height: 50vh;
+  border: 3px solid, white;
+  border-radius: 5px;
+  margin: auto;
+  margin-top: 200px;
+  display: grid;
+  position: relative;
+  gap: 5px;
+  padding: 5px;
+  box-shadow: 0px 0px 30px 5px white;
+  transition: 0.3s;
+}
+.calculator:hover {
+  box-shadow: 0 0 50px 0 white;
+}
+.container {
+  display: flex;
+  justify-content: space-between;
+  gap: 5px;
 }
 
+.container button {
+  box-shadow: 0 0 10px 0 black;
+  width: 25%;
+  font-size: 15px;
+  border: none;
+  border-radius: 5px;
+}
 
-.container input{
-    width:100%;
-    outline: none;
-    font-size: 25px;
-    text-align: end;
-     border-radius: 5px;
-     border: 1px solid rgb(180, 178, 178);
-     padding-right: 10px;
+.container button:hover {
+  background-color: rgb(29, 28, 28);
+  color: white;
+  cursor: pointer;
+  box-shadow: 0 0 20px 0 black;
+  transform: scale(1.05) translateY(-3px);
+  transition: 0.3s;
+}
 
-
+.container input {
+  box-shadow: 0 0 10px 0 black;
+  width: 100%;
+  outline: none;
+  font-size: 25px;
+  text-align: end;
+  text-shadow: 0px 0px 5px  black;
+  border-radius: 5px;
+  border: 1px solid rgb(180, 178, 178);
+  padding-right: 10px;
 }
 .evaluate {
-    background-color: rgb(64, 214, 237);
-    color: white;
-    font-size: 30px;
-}    
-
-.evaluate:hover{
-    background-color: rgb(2, 129, 149);
-    cursor: pointer;
+  background-color: rgb(106, 110, 111);
+  color: white;
+  font-size: 30px;
+  font-weight: bold;
 }
 
-
+.evaluate:hover {
+  background-color: rgb(72, 76, 76);
+  color: white;
+  cursor: pointer;
+}
